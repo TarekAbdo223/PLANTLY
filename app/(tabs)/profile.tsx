@@ -5,7 +5,7 @@ import { useUserStore } from "@/store/userStore";
 
 export default function ProfileScreen() {
   const router = useRouter();
-  const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);
+  const toggleHasOnboarded = useUserStore((state) => state.toggleHasOnboarded);
 
   return (
     <View style={styles.container}>
