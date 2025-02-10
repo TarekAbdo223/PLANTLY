@@ -1,10 +1,16 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 import { Theme } from "@/theme";
+import { useRouter } from "expo-router";
+import { useUserStore } from "@/store/userStore";
 
 export default function ProfileScreen() {
+  const router = useRouter();
+  const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Profile</Text>
+      <Button title="Back to onboarding" onPress={toggleHasOnboarded} />
     </View>
   );
 }

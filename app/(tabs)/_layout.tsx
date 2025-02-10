@@ -3,10 +3,12 @@ import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { Theme } from "@/theme";
-
-const hasFinishedOnboarding = true;
+import { useUserStore } from "@/store/userStore";
 
 export default function Layout() {
+  const hasFinishedOnboarding = useUserStore(
+    (state) => state.hasFinishedOnboarding
+  );
   if (!hasFinishedOnboarding) {
     return <Redirect href="/onboarding" />;
   }
