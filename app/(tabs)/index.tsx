@@ -1,6 +1,6 @@
+import { Theme } from "@/theme";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { Theme } from "@/theme";
 
 export default function App() {
   return (
