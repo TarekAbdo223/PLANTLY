@@ -2,7 +2,7 @@ import { Tabs } from "expo-router";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import { Colors } from "react-native/Libraries/NewAppScreen";
-import { Theme } from "../theme";
+import { Theme } from "@/theme";
 
 export default function Layout() {
   return (
