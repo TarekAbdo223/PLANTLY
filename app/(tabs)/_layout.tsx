@@ -4,7 +4,7 @@ import Feather from "@expo/vector-icons/Feather";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { Theme } from "@/theme";
 
-const hasFinishedOnboarding = false;
+const hasFinishedOnboarding = true;
 
 export default function Layout() {
   if (!hasFinishedOnboarding) {
