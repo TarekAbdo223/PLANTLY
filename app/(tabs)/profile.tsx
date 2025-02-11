@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, Button } from "react-native";
 import { Theme } from "@/theme";
 import { useRouter } from "expo-router";
 import { useUserStore } from "@/store/userStore";
+import { PlantlyButton } from "@/components/PlantlyButton";
 
 export default function ProfileScreen() {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function ProfileScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Profile</Text>
-      <Button title="Back to onboarding" onPress={toggleHasOnboarded} />
+      <PlantlyButton title="Back to onboarding" onPress={toggleHasOnboarded} />
     </View>
   );
 }
