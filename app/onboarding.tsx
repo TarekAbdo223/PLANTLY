@@ -3,6 +3,7 @@ import { Theme, theme } from "@/theme";
 import { useUserStore } from "@/store/userStore";
 import { useRouter } from "expo-router";
 import { PlantlyButton } from "@/components/PlantlyButton";
+import * as Haptics from "expo-haptics";
 
 export default function OnboardingScreen() {
   const router = useRouter();
