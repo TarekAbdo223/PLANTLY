@@ -14,6 +14,10 @@ export default function Layout() {
         name="onboarding"
         options={{ headerShown: false, animation: "fade" }}
       />
+      <Stack.Screen
+        name="new"
+        options={{ title: "New Plant", presentation: "modal" }}
+      />
     </Stack>
   );
 }
