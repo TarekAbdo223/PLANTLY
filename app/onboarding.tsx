@@ -6,6 +6,7 @@ import { PlantlyButton } from "@/components/PlantlyButton";
 import * as Haptics from "expo-haptics";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
+import { PlantlyImage } from "@/components/PlantlyImage";
 
 export default function OnboardingScreen() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function OnboardingScreen() {
       style={styles.container}
     >
       <StatusBar style="light" />
+      <PlantlyImage />
       <PlantlyButton title="Let me in!" onPress={handlePress} />
     </LinearGradient>
   );
