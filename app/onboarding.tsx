@@ -24,6 +24,12 @@ export default function OnboardingScreen() {
       colors={[Theme.colorGreen, Theme.colorAppleGreen, Theme.colorLimeGreen]}
       style={styles.container}
     >
+      <View>
+        <Text style={styles.heading}>Plantly</Text>
+        <Text style={styles.tagLine}>
+          Keep your plants healthy and hydrated
+        </Text>
+      </View>
       <StatusBar style="light" />
       <PlantlyImage />
       <PlantlyButton title="Let me in!" onPress={handlePress} />
@@ -34,11 +40,20 @@ export default function OnboardingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: Theme.colorWhite,
   },
-  text: {
+  heading: {
+    fontSize: 42,
+    color: Theme.colorWhite,
+    fontWeight: "bold",
+    marginBottom: 12,
+    textAlign: "center",
+  },
+  tagLine: {
     fontSize: 24,
+    color: Theme.colorWhite,
+    textAlign: "center",
   },
 });
