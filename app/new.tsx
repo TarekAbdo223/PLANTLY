@@ -125,5 +125,6 @@ const styles = StyleSheet.create({
   centered: {
     alignItems: "center",
     marginBottom: 24,
+    marginVertical: 12,
   },
 });
