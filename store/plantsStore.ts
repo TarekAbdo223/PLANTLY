@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
+import * as FileSystem from "expo-file-system";
 
 export type PlantType = {
   id: string;
