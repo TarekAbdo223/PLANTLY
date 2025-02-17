@@ -33,6 +33,16 @@ export const usePlantStore = create(
         imageUri?: string
       ) => {
         console.log(imageUri);
+        const savedImageUri =
+          FileSystem.documentDirectory +
+          `${new Date().getTime()}-${imageUri?.split("/").slice(-1)[0]}`;
+
+        if (imageUri) {
+          FileSystem.moveAsync({
+            from: imageUri,
+            to: savedImageUri,
+          });
+        }
         return set((state) => {
           return {
             ...state,
