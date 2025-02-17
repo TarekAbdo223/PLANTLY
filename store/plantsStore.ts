@@ -12,7 +12,11 @@ export type PlantType = {
 type PlantsState = {
   nextId: number;
   plants: PlantType[];
-  addPlant: (name: string, wateringFrequencyDays: number) => void;
+  addPlant: (
+    name: string,
+    wateringFrequencyDays: number,
+    imageUri?: string
+  ) => void;
   removePlant: (plantId: string) => void;
   waterPlant: (plantId: string) => void;
 };
@@ -22,7 +26,12 @@ export const usePlantStore = create(
     (set) => ({
       plants: [],
       nextId: 1,
-      addPlant: (name: string, wateringFrequencyDays: number) => {
+      addPlant: (
+        name: string,
+        wateringFrequencyDays: number,
+        imageUri?: string
+      ) => {
+        console.log(imageUri);
         return set((state) => {
           return {
             ...state,
