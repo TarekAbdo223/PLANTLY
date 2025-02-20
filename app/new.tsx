@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginBottom: 24,
     fontSize: 18,
+    backgroundColor: Theme.colorLightGrey,
   },
   centered: {
     alignItems: "center",
