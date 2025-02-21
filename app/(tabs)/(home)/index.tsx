@@ -6,6 +6,8 @@ import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
+//
+
 export default function App() {
   const plants = usePlantStore((state) => state.plants);
   console.log(plants);
