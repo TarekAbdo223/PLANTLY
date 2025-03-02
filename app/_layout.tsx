@@ -1,7 +1,6 @@
-import { Theme } from "@/theme";
-import { LinearGradient } from "expo-linear-gradient";
-import { Stack } from "expo-router";
-import { StyleSheet, View } from "react-native";
+import { SplashScreen, Stack } from "expo-router";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
   return (
